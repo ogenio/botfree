@@ -47,7 +47,7 @@ switch ($tlg->Text ()){
 		'text' => $textoMsg->start,
 		'parse_mode' => 'html',
 		'reply_markup' => $tlg->buildInlineKeyBoard ([
-			[$tlg->buildInlineKeyboardButton ('🔹 Conta SSH 🔹 ', null, '/sshgratis')]
+			[$tlg->buildInlineKeyboardButton ('🔹 Conta SSH 🔹', null, '/sshgratis')]
 		])
 	]);
 
@@ -90,7 +90,7 @@ switch ($tlg->Text ()){
 
 		exec ('./gerarusuario.sh '.$usuario.' '.$senha.' 1 1');
 
-		$textoSSH="<b>Conta SSH</b>\r\n\r\n<b>Usuario:</b> <code>".$usuario."</code>\r\n<b>Senha:</b> <code>".$senha."</code>\r\n<b>Logins:</b> 1\r\n<b>Validade:</b> ".date ('d/m', strtotime('+1 day'))."\r\n\r\nBaixar App @venda_netpro_bot";
+		$textoSSH="<b>Arquivo:</b> TESTE\r\n<b>Conta SSH</b>\r\n\r\n<b>Usuario:</b> <code>".$usuario."</code>\r\n<b>Senha:</b> <code>".$senha."</code>\r\n<b>Logins:</b> 1\r\n<b>Validade:</b> ".date ('d/m', strtotime('+1 day'))."\r\n\r\nBaixar App @venda_netpro_bot";
 //<b>Servidor:</b> <code>".$ip."</code>\r\n
 		$redis->setex ($tlg->UserID (), 43200, 'true'); //define registro para ser guardado por 12h
 
