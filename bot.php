@@ -47,7 +47,7 @@ switch ($tlg->Text ()){
 		'text' => $textoMsg->start,
 		'parse_mode' => 'html',
 		'reply_markup' => $tlg->buildInlineKeyBoard ([
-			[$tlg->buildInlineKeyboardButton ('🔹 Conta SSH🔹 ', null, '/sshgratis')]
+			[$tlg->buildInlineKeyboardButton ('🔹 Conta SSH 🔹 ', null, '/sshgratis')]
 		])
 	]);
 
