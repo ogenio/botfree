@@ -46,7 +46,7 @@ read token
 clear
 echo "ip=$ip
 token=$token
-limite=100" >> dadosBot.ini
+limite=50" >> dadosBot.ini
 
 screen -dmS bot php bot.php
 
