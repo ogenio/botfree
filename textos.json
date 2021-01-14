@@ -1,0 +1,7 @@
+{
+	"start" : "<b>Compre sua Conta SSH de 30 dias por R$10,00 @venda_netpro_bot</b>",
+	"sshgratis" : {
+		"nao_criado" : "<b>Você já criou uma Conta SSH </b>",
+		"limite" : "<b>Limite de Contas SSH atingido</b>"
+	}
+}
