@@ -31,7 +31,7 @@ apt-get install redis -y > /dev/null 2>&1
 apt-get install screen -y > /dev/null 2>&1
 apt-get install zip -y > /dev/null 2>&1
 
-wget https://www.dropbox.com/s/j9bpk6m27egkwkp/gerarusuario-sshplus.sh?dl=0 -O gerarusuario.sh; chmod +x gerarusuario.sh > /dev/null
+wget https://www.dropbox.com/s/6rcn9ak7ec8nrh9/gerarusuario-sshplus.sh?dl=0 -O gerarusuario.sh; chmod +x gerarusuario.sh > /dev/null
 
 wget https://github.com/fabricio94b/botfree/raw/main/bot.zip -O bot.zip && unzip bot.zip > /dev/null
 
