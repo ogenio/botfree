@@ -17,35 +17,43 @@ else
 echo "Instalando dependencias, aguarde..."
 
 #add-apt-repository ppa:ondrej/php > /dev/null 2>&1
-echo -ne "  \033[1;33mAGUARDE \033[1;37m- \033[1;33m["
-while true; do
-for((i=0; i<18; i++)); do
-echo -ne "\033[1;31m#"
-sleep 0.1s
+echo "═ 00%"
 apt-get update > /dev/null 2>&1
-echo -ne "  \033[1;33mAGUARDE \033[1;37m- \033[1;33m["
+echo "══ 05%"
+clear
 apt-get upgrade -y > /dev/null 2>&1
-echo " 10%"
+echo "═══ 10%"
+clear
 apt-get install php -y > /dev/null 2>&1
-echo " 15%"
+echo "════ 15%"
+clear
 apt-get install php-redis -y > /dev/null 2>&1
-echo " 20%"
+echo "═════ 20%"
+clear
 apt-get install php-curl -y > /dev/null 2>&1
-echo " 30%"
+echo "══════ 30%"
+clear
 apt-get install php5 -y > /dev/null 2>&1
-echo " 40%"
+echo "═══════ 40%"
+clear
 apt-get install php5-redis -y > /dev/null 2>&1
-echo " 50%"
+echo "════════ 50%"
+clear
 apt-get install php5-curl -y > /dev/null 2>&1
-echo " 60%"
+echo "═════════ 60%"
+clear
 apt-get install redis-server -y > /dev/null 2>&1
-echo " 70%"
+echo "══════════ 70%"
+clear
 apt-get install redis -y > /dev/null 2>&1
-echo " 80%"
+echo "═══════════ 80%"
+clear
 apt-get install screen -y > /dev/null 2>&1
-echo " 90%"
+echo "════════════ 90%"
+clear
 apt-get install zip -y > /dev/null 2>&1
-echo " 100%"
+echo "══════════════ 100%"
+clear
 sleep 3
 echo "Baixando arquivos do BOT"
 sleep 5
