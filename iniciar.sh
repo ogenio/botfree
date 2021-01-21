@@ -17,9 +17,13 @@ else
 echo "Instalando dependencias, aguarde..."
 
 #add-apt-repository ppa:ondrej/php > /dev/null 2>&1
-echo " 00%"
+echo -ne "  \033[1;33mAGUARDE \033[1;37m- \033[1;33m["
+while true; do
+for((i=0; i<18; i++)); do
+echo -ne "\033[1;31m#"
+sleep 0.1s
 apt-get update > /dev/null 2>&1
-echo " 05%"
+echo -ne "  \033[1;33mAGUARDE \033[1;37m- \033[1;33m["
 apt-get upgrade -y > /dev/null 2>&1
 echo " 10%"
 apt-get install php -y > /dev/null 2>&1
