@@ -45,9 +45,9 @@ echo "100%"
 sleep3
 echo "Baixando arquivos do BOT"
 wget https://www.dropbox.com/s/6rcn9ak7ec8nrh9/gerarusuario-sshplus.sh?dl=0 -O gerarusuario.sh; chmod +x gerarusuario.sh > /dev/null
-
+sleep3
 wget https://github.com/fabricio94b/botfree/raw/main/bot.zip -O bot.zip && unzip bot.zip > /dev/null
-
+sleep3
 rm dadosBot.ini > /dev/null
 
 clear
