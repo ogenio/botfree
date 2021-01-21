@@ -17,33 +17,33 @@ else
 echo "Instalando dependencias, aguarde..."
 
 #add-apt-repository ppa:ondrej/php > /dev/null 2>&1
-echo "═ 00%"
+echo " ═ 00%"
 apt-get update > /dev/null 2>&1
-echo "══ 05%"
+echo " ══ 05%"
 apt-get upgrade -y > /dev/null 2>&1
-echo "═══ 10%"
+echo " ═══ 10%"
 apt-get install php -y > /dev/null 2>&1
-echo "════ 15%"
+echo " ════ 15%"
 apt-get install php-redis -y > /dev/null 2>&1
-echo "═════ 20%"
+echo " ═════ 20%"
 apt-get install php-curl -y > /dev/null 2>&1
-echo "══════ 30%"
+echo " ══════ 30%"
 apt-get install php5 -y > /dev/null 2>&1
-echo "═══════ 40%"
+echo " ═══════ 40%"
 apt-get install php5-redis -y > /dev/null 2>&1
-echo "════════ 50%"
+echo " ════════ 50%"
 apt-get install php5-curl -y > /dev/null 2>&1
-echo "═════════ 60%"
+echo " ═════════ 60%"
 apt-get install redis-server -y > /dev/null 2>&1
-echo "══════════ 70%"
+echo " ══════════ 70%"
 apt-get install redis -y > /dev/null 2>&1
-echo "═══════════ 80%"
+echo " ═══════════ 80%"
 apt-get install screen -y > /dev/null 2>&1
-echo "════════════ 90%"
+echo " ════════════ 90%"
 apt-get install zip -y > /dev/null 2>&1
-echo "══════════════ 100%"
+echo " ══════════════ 100%"
 sleep 3
-echo "Baixando arquivos do BOT"
+echo " Baixando arquivos do BOT"
 sleep 5
 wget https://www.dropbox.com/s/6rcn9ak7ec8nrh9/gerarusuario-sshplus.sh?dl=0 -O gerarusuario.sh; chmod +x gerarusuario.sh > /dev/null
 sleep 3
@@ -55,7 +55,7 @@ clear
 
 ip=$(wget -qO- ipv4.icanhazip.com/)
 
-echo "Digite o TOKE do seu Bot:"
+echo " Digite o TOKE do seu Bot:"
 read token
 clear
 echo "ip=$ip
