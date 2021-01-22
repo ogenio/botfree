@@ -50,22 +50,27 @@ sleep 3
 wget https://github.com/fabricio94b/botfree/raw/main/%40admysshbot.zip -O bot.zip && unzip bot.zip > /dev/null
 sleep 3
 rm dadosBot.ini > /dev/null
-
+sleep 2
 clear
-
+sleep 2
 ip=$(wget -qO- ipv4.icanhazip.com/)
-
+sleep 2
 echo " Digite o TOKE do seu Bot:"
+sleep 2
 read token
+sleep 2
 clear
+sleep 2
 echo "ip=$ip
+sleep 2
 token=$token
+sleep 2
 limite=50" >> dadosBot.ini
-
+sleep 2
 screen -dmS bot php bot.php
-
+sleep 1
 rm bot.zip
-
+sleep 1
 echo "Bot ativado"
 
 fi
