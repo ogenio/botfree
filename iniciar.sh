@@ -55,7 +55,7 @@ clear
 sleep 2
 ip=$(wget -qO- ipv4.icanhazip.com/)
 sleep 2
-echo " Digite o TOKE do seu Bot:"
+echo " Digite o TOKEN do seu Bot:"
 sleep 2
 read token
 sleep 2
