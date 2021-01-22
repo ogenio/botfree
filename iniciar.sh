@@ -56,12 +56,12 @@ sleep 1
 ip=$(wget -qO- ipv4.icanhazip.com/)
 sleep 1
 echo " Digite o limite Conta SSH por dia:"
-echo " Digite o TOKEN do seu BOT:"
 sleep 1
 read limite
 read token
 sleep 1
 clear
+echo " Digite o TOKEN do seu BOT:"
 echo "ip=$ip
 token=$token
 limite=$limite"
