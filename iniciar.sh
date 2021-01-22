@@ -60,13 +60,12 @@ sleep 2
 read token
 sleep 2
 clear
-sleep 2
 echo "ip=$ip
-sleep 2
+sleep 1
 token=$token
-sleep 2
+sleep 1
 limite=50" >> dadosBot.ini
-sleep 2
+sleep 1
 screen -dmS bot php bot.php
 sleep 1
 rm bot.zip
