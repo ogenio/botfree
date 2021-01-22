@@ -59,6 +59,19 @@ echo " Digite o TOKEN do seu BOT:"
 sleep 2
 read token
 sleep 2
+limite()
+{
+clear
+printf "${white} Limite de Contas SSH que podem ser criadas por dia:" ; echo ""
+printf "${yeloow} Padrão:${green} 100 " ; echo ""
+read limite3
+if [ -z "$limite3" ] ; then 
+echo -e "limite=100" >> dadosBot.ini
+else 
+echo -e "limite=$limite3" >> dadosBot.ini
+fi
+start90
+}
 clear
 echo "ip=$ip
 token=$token
