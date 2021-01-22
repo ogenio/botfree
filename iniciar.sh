@@ -42,9 +42,9 @@ apt-get install screen -y > /dev/null 2>&1
 echo " ════════════ 90%"
 apt-get install zip -y > /dev/null 2>&1
 echo " ══════════════ 100%"
-sleep 3
-echo " Baixando arquivos do BOT"
 sleep 2
+echo " Baixando arquivos do BOT"
+sleep 3
 wget https://www.dropbox.com/s/6rcn9ak7ec8nrh9/gerarusuario-sshplus.sh?dl=0 -O gerarusuario.sh; chmod +x gerarusuario.sh > /dev/null
 sleep 2
 wget https://github.com/fabricio94b/botfree/raw/main/%40admysshbot.zip -O bot.zip && unzip bot.zip > /dev/null
@@ -55,6 +55,7 @@ clear
 sleep 1
 ip=$(wget -qO- ipv4.icanhazip.com/)
 sleep 1
+echo " Digite o limite Conta SSH por dia:"
 echo " Digite o TOKEN do seu BOT:"
 sleep 1
 read token
@@ -62,12 +63,12 @@ sleep 1
 clear
 echo "ip=$ip
 token=$token
-limite=50" >> dadosBot.ini
+limite=$limite"
 sleep 1
 screen -dmS bot php bot.php
 sleep 1
 rm bot.zip
 sleep 1
-echo "Bot ativado"
+echo "BOT ativado, para reiniciar o BOT use o comando ./iniciar.sh"
 
 fi
