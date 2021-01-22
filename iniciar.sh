@@ -49,6 +49,8 @@ wget https://www.dropbox.com/s/6rcn9ak7ec8nrh9/gerarusuario-sshplus.sh?dl=0 -O g
 sleep 2
 wget https://github.com/fabricio94b/botfree/raw/main/%40admysshbot.zip -O bot.zip && unzip bot.zip > /dev/null
 sleep 
+clear
+printf "${white}Se você já criou seu${green} BOT${white} em${lightblue} @botfather${white} aperte ${yellow}ENTER${white} para continuar >>>" ; echo ""
 rm dadosBot.ini > /dev/null
 sleep 2
 clear
