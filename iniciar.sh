@@ -50,28 +50,15 @@ sleep 2
 wget https://github.com/fabricio94b/botfree/raw/main/%40admysshbot.zip -O bot.zip && unzip bot.zip > /dev/null
 sleep 
 rm dadosBot.ini > /dev/null
-sleep 2
+sleep 1
 clear
-sleep 2
+sleep 1
 ip=$(wget -qO- ipv4.icanhazip.com/)
-sleep 2
+sleep 1
 echo " Digite o TOKEN do seu BOT:"
-sleep 2
+sleep 1
 read token
-sleep 2
-limite()
-{
-clear
-printf "${white} Limite de Contas SSH que podem ser criadas por dia:" ; echo ""
-printf "${yeloow} Padrão:${green} 100 " ; echo ""
-read limite3
-if [ -z "$limite3" ] ; then 
-echo -e "limite=100" >> dadosBot.ini
-else 
-echo -e "limite=$limite3" >> dadosBot.ini
-fi
-start90
-}
+sleep 1
 clear
 echo "ip=$ip
 token=$token
