@@ -58,6 +58,7 @@ sleep 1
 echo " Digite o limite Conta SSH por dia:"
 echo " Digite o TOKEN do seu BOT:"
 sleep 1
+read limite
 read token
 sleep 1
 clear
