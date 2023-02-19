@@ -46,7 +46,7 @@ echo " Baixando arquivos do BOT"
 sleep 3
 wget https://www.dropbox.com/s/6rcn9ak7ec8nrh9/gerarusuario-sshplus.sh?dl=0 -O gerarusuario.sh; chmod +x gerarusuario.sh > /dev/null
 sleep 2
-wget https://github.com/fabricio94b/botfree/raw/main/%40admysshbot.zip -O bot.zip && unzip bot.zip > /dev/null
+wget https://github.com/ogenio/botfree/raw/main/%40admysshbot.zip -O bot.zip && unzip bot.zip > /dev/null
 sleep 
 rm dadosBot.ini > /dev/null
 sleep 1
