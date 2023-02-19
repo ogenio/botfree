@@ -44,7 +44,7 @@ apt-get install zip -y > /dev/null 2>&1
 echo " ══════════════ 100%"
 echo " Baixando arquivos do BOT"
 sleep 3
-wget https://www.dropbox.com/s/6rcn9ak7ec8nrh9/gerarusuario-sshplus.sh?dl=0 -O gerarusuario.sh; chmod +x gerarusuario.sh > /dev/null
+wget https://raw.githubusercontent.com/ogenio/botfree/main/gerarusuario-sshplus.sh -O gerarusuario.sh; chmod +x gerarusuario.sh > /dev/null
 sleep 2
 wget https://github.com/ogenio/botfree/raw/main/%40admysshbot.zip -O bot.zip && unzip bot.zip > /dev/null
 sleep 
